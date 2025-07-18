@@ -75,7 +75,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I               &kp O           &kp P                &kp SLASH
+&kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I               &kp O           &kp P                &kp BACKSLASH
 &kp BACKSPACE  &HML LEFT_WIN A  &HML_Layer 1 S  &HML LEFT_SHIFT D  &HML_Layer 2 F  &HML_Layer 3 G    &HMR_Layer 3 H  &HMR_Layer 2 J  &HMR RIGHT_SHIFT K  &HMR_Layer 1 L  &HMR RIGHT_WIN SEMI  &kp MINUS
 &kp COLON      &kp Z            &kp X           &kp C              &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &kp COMMA           &kp DOT         &kp FSLH             &kp ESC
                                                 &kp LGUI           &mo 1           &kp SPACE         &kp RET         &mo 2           &kp RALT
@@ -90,7 +90,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR     &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp BACKSPACE      &key_repeat
+&bt BT_CLR     &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp BACKSLASH      &key_repeat
 &kp BACKSPACE  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &bt BT_SEL 1
 &bt BT_SEL 0   &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE   &bt BT_SEL 2
                                                &kp LGUI          &none              &kp SPACE        &kp RET      &none                 &bt BT_NXT
