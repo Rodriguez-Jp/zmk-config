@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "keys_es.h"
+#include <behaviors/unicode.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include "keys_es.h"
-#include <behaviors/unicode.dtsi>
 
 &uc {
-  default-mode = <UC_MODE_WIN_COMPOSE>;
-  minimum-length = <0>;            // Set to desired minimum input length
-  win-compose-key = <RALT>;        // Overwrite WinCompose compose key
+    default-mode = <UC_MODE_WIN_COMPOSE>;
+    minimum-length = <0>;            // Set to desired minimum input length
+    win-compose-key = <RALT>;        // Overwrite WinCompose compose key
 };
 
 / {
@@ -140,9 +140,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I               &kp O           &kp P                      &kp BACKSLASH
+&kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I               &kp O           &kp P              &kp BACKSLASH
 &kp BACKSPACE  &HML LEFT_WIN A  &HML_Layer 1 S  &HML LEFT_SHIFT D  &HML_Layer 2 F  &HML_Layer 3 G    &HMR_Layer 3 H  &HMR_Layer 2 J  &HMR RIGHT_SHIFT K  &HMR_Layer 1 L  &uc UC_ES_N_TILDE  &kp SEMI
-&kp ESCAPE     &kp Z            &kp X           &kp C              &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &kp COMMA           &kp DOT         &kp FSLH                   &kp MINUS
+&kp ESCAPE     &kp Z            &kp X           &kp C              &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &kp COMMA           &kp DOT         &kp FSLH           &kp MINUS
                                                 &kp LGUI           &mo 4           &kp SPACE         &kp RET         &mo 4           &kp RALT
             >;
         };
@@ -179,19 +179,19 @@
 
         Nav_Layer {
             bindings = <
-&none          &none  &kp END       &none              &kp HOME  &kp PAGE_UP      &none           &none           &none         &none      &none  &none
-&kp BACKSPACE  &none  &none         &none              &none     &kp PAGE_DOWN    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none          &none  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &none     &none            &none           &none           &none         &none      &none  &none
-                                    &none              &none     &kp SPACE        &kp ENTER       &none           &none
+&none          &none  &kp END       &none              &kp HOME  &kp PAGE_UP      &none           &switch_tab_backwards  &switch_tab_forward  &none      &none  &none
+&kp BACKSPACE  &none  &none         &none              &none     &kp PAGE_DOWN    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW         &kp RIGHT  &none  &none
+&none          &none  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &none     &none            &none           &none                  &none                &none      &none  &none
+                                    &none              &none     &kp SPACE        &kp ENTER       &none                  &none
             >;
         };
 
         spanish-symbols {
             bindings = <
-&trans  &trans    &trans  &uc UC_ES_E_ACUTE  &trans  &trans    &trans         &uc UC_ES_U_ACUTE &uc UC_ES_I_ACUTE  &uc UC_ES_O_ACUTE  &trans   &trans
-&trans  &uc UC_ES_A_ACUTE  &trans  &trans    &trans  &trans    &uc UC_ES_U_DIERESIS  &trans    &trans    &trans    &trans    &trans
-&kp F1  &kp F2    &kp F3  &kp F4    &kp F5  &kp F6    &kp F7         &kp F8    &kp F9    &kp F10   &kp F11  &kp F12
-                          &trans    &trans  &trans    &trans         &trans    &trans
+&trans  &trans             &trans  &uc UC_ES_E_ACUTE  &trans  &trans    &trans                &uc UC_ES_U_ACUTE  &uc UC_ES_I_ACUTE  &uc UC_ES_O_ACUTE  &trans   &trans
+&trans  &uc UC_ES_A_ACUTE  &trans  &trans             &trans  &trans    &uc UC_ES_U_DIERESIS  &trans             &trans             &trans             &trans   &trans
+&kp F1  &kp F2             &kp F3  &kp F4             &kp F5  &kp F6    &kp F7                &kp F8             &kp F9             &kp F10            &kp F11  &kp F12
+                                   &trans             &trans  &trans    &trans                &trans             &trans
             >;
         };
     };
