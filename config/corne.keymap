@@ -155,7 +155,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR     &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &uc 0xBF 0  &uc 0x3F
+&bt BT_CLR     &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &uc 0xBF 0  &uc 0x3F 0
 &kp BACKSPACE  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES         &bt BT_SEL 1
 &bt BT_SEL 0   &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE          &bt BT_SEL 2
                                                &kp LGUI          &kp DELETE         &kp SPACE        &kp RET      &none                 &bt BT_NXT
