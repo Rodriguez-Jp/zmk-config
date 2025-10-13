@@ -142,7 +142,7 @@
             bindings = <
 &kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I                 &kp O           &kp P              &kp BACKSLASH
 &kp BACKSPACE  &HML LEFT_WIN A  &HML_Layer 1 S  &HML LEFT_SHIFT D  &HML_Layer 2 F  &HML_Layer 3 G    &HMR_Layer 3 H  &HMR_Layer 2 J  &HMR RIGHT_SHIFT K    &HMR_Layer 1 L  &uc UC_ES_N_TILDE  &kp SEMI
-&kp ESCAPE     &kp Z            &kp X           &HML C LEFT_ALT    &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &HMR COMMA RIGHT_ALT  &kp DOT         &kp FSLH           &kp MINUS
+&kp ESCAPE     &kp Z            &kp X           &HML LEFT_ALT C    &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &HMR RIGHT_ALT COMMA  &kp DOT         &kp FSLH           &kp MINUS
                                                 &kp LGUI           &mo 4           &kp SPACE         &kp RET         &mo 4           &kp RIGHT_GUI
             >;
         };
