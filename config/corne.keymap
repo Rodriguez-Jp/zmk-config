@@ -140,10 +140,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I               &kp O           &kp P              &kp BACKSLASH
-&kp BACKSPACE  &HML LEFT_WIN A  &HML_Layer 1 S  &HML LEFT_SHIFT D  &HML_Layer 2 F  &HML_Layer 3 G    &HMR_Layer 3 H  &HMR_Layer 2 J  &HMR RIGHT_SHIFT K  &HMR_Layer 1 L  &uc UC_ES_N_TILDE  &kp SEMI
-&kp ESCAPE     &kp Z            &kp X           &kp C              &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &kp COMMA           &kp DOT         &kp FSLH           &kp MINUS
-                                                &kp LGUI           &mo 4           &kp SPACE         &kp RET         &mo 4           &kp RALT
+&kp TAB        &kp Q            &kp W           &kp E              &kp R           &kp T             &kp Y           &kp U           &kp I                 &kp O           &kp P              &kp BACKSLASH
+&kp BACKSPACE  &HML LEFT_WIN A  &HML_Layer 1 S  &HML LEFT_SHIFT D  &HML_Layer 2 F  &HML_Layer 3 G    &HMR_Layer 3 H  &HMR_Layer 2 J  &HMR RIGHT_SHIFT K    &HMR_Layer 1 L  &uc UC_ES_N_TILDE  &kp SEMI
+&kp ESCAPE     &kp Z            &kp X           &HML C LEFT_ALT    &HML LCTRL V    &kp B             &kp N           &HMR RCTRL M    &HMR COMMA RIGHT_ALT  &kp DOT         &kp FSLH           &kp MINUS
+                                                &kp LGUI           &mo 4           &kp SPACE         &kp RET         &mo 4           &kp RIGHT_GUI
             >;
         };
 
@@ -155,10 +155,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR     &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &uc 0xBF 0  &uc 0x3F 0
-&kp BACKSPACE  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES         &bt BT_SEL 1
-&bt BT_SEL 0   &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE          &bt BT_SEL 2
-                                               &kp LGUI          &kp DELETE         &kp SPACE        &kp RET      &none                 &bt BT_NXT
+&bt BT_CLR     &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER          &kp PIPE         &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &uc 0xBF 0         &uc 0x3F 0
+&kp BACKSPACE  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND    &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &bt BT_SEL 1
+&bt BT_SEL 0   &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT      &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD     &kp SINGLE_QUOTE   &bt BT_SEL 2
+                                               &trans            &kp DELETE         &kp SPACE        &kp RET      &trans                &trans
             >;
         };
 
@@ -170,10 +170,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB        &kp SLASH         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK    &none    &none  &none      &none              &none  &none
-&kp BACKSPACE  &kp MINUS         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS        &none    &none  &kp E      &kp RIGHT_CONTROL  &none  &none
-&kp LSHFT      &kp LEFT_CONTROL  &kp N7        &kp N8        &kp N9        &kp PERCENT     &none    &none  &kp COMMA  &kp PERIOD         &none  &none
-                                               &kp LGUI      &kp N0        &kp SPACE       &kp RET  &none  &kp RALT
+&kp TAB        &kp SLASH         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK    &none    &none   &none      &none              &none  &none
+&kp BACKSPACE  &kp MINUS         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS        &none    &none   &kp E      &kp RIGHT_CONTROL  &none  &none
+&kp LSHFT      &kp LEFT_CONTROL  &kp N7        &kp N8        &kp N9        &kp PERCENT     &none    &none   &kp COMMA  &kp PERIOD         &none  &none
+                                               &trans        &trans        &kp SPACE       &kp RET  &trans  &trans
             >;
         };
 
@@ -182,15 +182,15 @@
 &none          &none  &kp END       &none              &kp HOME  &kp PAGE_UP      &none           &switch_tab_backwards  &switch_tab_forward  &none      &none  &none
 &kp BACKSPACE  &none  &none         &none              &none     &kp PAGE_DOWN    &kp LEFT_ARROW  &kp DOWN_ARROW         &kp UP_ARROW         &kp RIGHT  &none  &none
 &none          &none  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &none     &none            &none           &none                  &none                &none      &none  &none
-                                    &none              &none     &kp SPACE        &kp ENTER       &none                  &none
+                                    &trans             &trans    &kp SPACE        &kp ENTER       &trans                 &trans
             >;
         };
 
         spanish-symbols {
             bindings = <
-&trans  &trans             &trans  &uc UC_ES_E_ACUTE  &trans  &trans    &trans                &uc UC_ES_U_ACUTE  &uc UC_ES_I_ACUTE  &uc UC_ES_O_ACUTE  &trans   &trans
-&trans  &uc UC_ES_A_ACUTE  &trans  &trans             &trans  &trans    &uc UC_ES_U_DIERESIS  &uc UC_SET_LINUX             &uc UC_SET_WIN_COMPOSE             &trans             &trans   &trans
-&kp F1  &kp F2             &kp F3  &kp F4             &kp F5  &kp F6    &kp F7                &kp F8             &kp F9             &kp F10            &kp F11  &kp F12
+&trans  &trans             &trans  &uc UC_ES_E_ACUTE  &trans  &trans    &trans                &uc UC_ES_U_ACUTE  &uc UC_ES_I_ACUTE       &uc UC_ES_O_ACUTE  &trans   &trans
+&trans  &uc UC_ES_A_ACUTE  &trans  &trans             &trans  &trans    &uc UC_ES_U_DIERESIS  &uc UC_SET_LINUX   &uc UC_SET_WIN_COMPOSE  &trans             &trans   &trans
+&kp F1  &kp F2             &kp F3  &kp F4             &kp F5  &kp F6    &kp F7                &kp F8             &kp F9                  &kp F10            &kp F11  &kp F12
                                    &trans             &trans  &trans    &trans                &trans             &trans
             >;
         };
